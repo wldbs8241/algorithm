@@ -12,4 +12,4 @@ for MM in range(M):
 inter_set = set(N_list)&set(M_list)
 inter_list = list(inter_set)
 print(len(inter_set))
-print(*sorted(inter_list))
+print(*sorted(inter_list), sep='/n')
