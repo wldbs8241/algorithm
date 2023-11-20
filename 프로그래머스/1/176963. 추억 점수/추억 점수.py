@@ -5,11 +5,11 @@ def solution(name, yearning, photo):
     answer = []
     for arr in photo:
         print(arr)
-        res = 0
-        for i in range(len(name)):
-            print(i)
-            if name[i] in arr:
-                res += yearning[i]
-        answer.append(res)
+        score = 0
+        for num in range(len(name)):
+            # print(num)
+            if name[num] in arr:
+                score += yearning[num]
+        answer.append(score)
     return answer
 
